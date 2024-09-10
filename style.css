@@ -1,0 +1,240 @@
+/* General Styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: entury;
+    background: url('BlueModern.png') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navigation Menu Styling */
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.main ul li {
+    margin: 0 15px;
+}
+
+.main ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.main ul li a:hover,
+.main ul li.active a {
+    background: #3498db;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sub-menu ul li {
+    margin: 10px 0;
+}
+
+.sub-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sub-menu ul li a:hover {
+    color: #3498db;
+}
+
+/* Title Styling */
+.title {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 80px;
+}
+
+/* Button Styling */
+.button {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 10px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #3498db;
+    border-color: #3498db;
+}
+
+/* Contact Section Styling */
+#contact {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    margin-top: 20vh; /* Pushes the contact section down from the top */
+    max-width: 500px; /* Sets a maximum width for better readability */
+    margin: 0 50px; /* Centers the contact section horizontally */
+    border-radius: 10px; /* Rounded corners for the contact section */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+#contact form {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+#contact input[type="text"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#contact input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/*about page css*/
+
+.hero{
+    overflow: hidden;
+}
+
+.heading{
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.hero-content{
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+}
+.hero-content h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.hero-content p{
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.hero-content button{
+    display: inline-block;
+    background-color: #2980b9;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hero-content button:hover{
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+.hero-image{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
